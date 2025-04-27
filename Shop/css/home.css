@@ -1,0 +1,175 @@
+body {
+    background-color: #000000;
+}
+
+*{
+    margin: 1px;
+    padding: 1px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color:#000000;
+    padding: 15px;
+    text-align: center;
+}
+
+.listHeader {
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #000000;
+    text-align: center;
+  }
+  
+.liHeader {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+.liHeader a {
+    display: block;
+    color: #20C20E;
+    text-align: center;
+    padding: 0px;
+    margin-left: 180px ;
+    text-decoration: none;
+  }
+  
+.liHeader a:hover {
+    color: #168802;
+  }
+
+.logo {
+    width: 47px;
+    height: 47px;
+  }
+
+.container-principal{
+    max-width: 1200px;
+    margin: auto;
+    background-color: #000000;
+}
+
+.container-produtos{
+    background-color: #000000;
+    min-height:  150px;
+    padding: 50px;
+}    
+
+.produto{
+    border: #ffffff 1px solid;
+    width: 30%;
+    margin: 1%;
+    display: inline-block;
+    padding: 15px;
+}
+
+h3{
+    margin-bottom: inherit;
+    padding-top: 10px;
+    color: #20C20E;
+    padding-left: 0px;
+    font-size: 14px;
+}
+
+.produto p{
+    color: #20C20E;
+    margin-bottom: 10px;    
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.precoDestaque {
+    font-weight: bold;
+    font-size: 14px;
+    color: #20C20E;
+
+}
+
+.botaoBuy{
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-transform: initial;
+    text-decoration: none;
+    background-color: #000000;
+    color: #20C20E;
+    border: solid 1px #20C20E;
+    padding: 15px;
+    transition: .4s;
+}
+
+.botaoBuy:hover{
+    background-color: #000000;
+    color: #168802;
+    border: solid 1px #168802;
+}
+
+footer{
+    background-color: #000000;
+    color: #20C20E;
+    padding: 15px;
+    text-align: center;
+}  
+
+.listFooter{
+    list-style-type: none;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.liFooter {
+    float: center;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold; 
+}
+
+.liFooter a {
+
+    display: block;
+    color: #20C20E;
+    text-align: center;
+    padding: 0px;
+    text-decoration: none;
+
+}
+
+
+.liFooter a:hover {
+    color: #168802;
+}
+
+.configimg{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+    background-size: cover;
+}
+        
+#img-1{
+    background-image:url(../img/img1.png);
+}
+#img-2{
+    background-image:url(../img/img2.png);
+}
+#img-3{
+    background-image:url(../img/img3.png);
+}
+#img-4{
+    background-image:url(../img/img4.png);
+}
+#img-5{
+    background-image:url(../img/img5.png);
+}
+#img-6{
+    background-image:url(../img/img6.png);
+}

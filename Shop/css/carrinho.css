@@ -1,0 +1,232 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1px;
+    padding: 1px;
+}
+
+body {
+    background-color: #000000;
+}
+
+header{
+    background-color:#000000;
+    padding: 15px;
+    text-align: center;
+}
+
+.listHeader {
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #000000;
+    text-align: center;
+  }
+  
+.liHeader {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+
+  }
+  
+.liHeader a {
+    display: block;
+    color: #20C20E;
+    text-align: center;
+    padding: 0px;
+    margin-left: 180px ;
+    text-decoration: none;
+  }
+  
+.liHeader a:hover {
+    color: #168802;
+  }
+
+.logo {
+    width: 46px;
+    height: 46px;
+  }
+
+.container {
+    margin: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.meuCarrinho {
+    padding: 20px;
+    margin: 50px;
+}
+
+.tituloMeuCarrinho {
+    color: #20C20E;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.imagemProduto {
+    height: 100px;
+    width: 100px;
+}
+
+.boxProduto {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+
+.nomeProduto {
+    color: #20C20E;
+    font-size: 12px;
+    padding-bottom: 15px;
+}
+
+.preco {
+    color: #20C20E;
+    font-size: 12px;
+    padding-left: 170px;
+}
+
+.removerProduto {
+    color: #20C20E;
+    padding-left: 105px;
+    font-size: 12px;
+}
+
+.linkRemover {
+    text-decoration: none;
+}
+
+.linkRemover:hover {
+    color: #168802;
+    text-decoration: none;
+}
+
+.removerProduto:hover {
+    color: #168802;
+}
+
+
+.resumoCarrinho {
+    padding: 20px;
+    margin: 100px;
+}
+
+.tituloResumo {
+    color:#20C20E;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+.boxInfosResumo {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.qtdItens {
+    color: #20C20E;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.valorProduto {
+    color: #20C20E;
+    font-size: 12px;
+    padding-left: 170px;
+}
+
+.boxTotalPagar {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.totalPagar {
+    color: #20C20E;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.total {
+    color: #20C20E;
+    font-size: 12px;
+    padding-left: 142px;
+}
+
+.boxBotao {
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+
+}
+
+.continuarCompra {
+    color: #20C20E;
+    background-color: #000000;
+    border: solid 1px #20C20E;
+    font-size: 12px;
+    padding: 10px;
+    margin-left: 90px;
+    margin-top: 30px;
+}
+
+.continuarCompra:hover {
+    cursor: pointer;
+}
+
+
+
+/*Footer config*/
+
+footer{
+    background-color: #000000;
+    color: #20C20E;
+    padding: 15px;
+    text-align: center;
+}  
+
+.listFooter{
+    list-style-type: none;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.liFooter {
+    float: center;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold; 
+}
+
+.liFooter a {
+    display: block;
+    color: #20C20E;
+    text-align: center;
+    padding: 0px;
+    text-decoration: none;
+}
+
+
+.liFooter a:hover {
+    color: #168802;
+}
