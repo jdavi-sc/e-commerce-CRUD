@@ -11,20 +11,25 @@ function login(event) {
             title: 'Login Realizado!',
             text: 'Seu login foi realizado com sucesso!',
             icon: 'success',
-            confirmButtomText: 'OK'
+            confirmButtomText: 'OK',
+            confirmButtonColor: '#20C20E',
+            background: '#000000',
+            color: '#20C20E'
         }).then(() => {
             setTimeout(() => {
                 location.href = "../pages/home.html";
             }, 100);
         });
 
-
     } else {
         Swal.fire({
             title: 'Erro!',
             text: 'Verifique os campos preenchidos',
             icon: 'error',
-            confirmButtomText: 'OK'
+            confirmButtomText: 'OK',
+            confirmButtonColor: '#20C20E',
+            background: '#000000',
+            color: '#20C20E'
         }).then(() => {
             setTimeout(() => {
                 location.href = "#";
