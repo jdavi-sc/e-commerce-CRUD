@@ -18,7 +18,7 @@ function signup(event) {
             color: '#20C20E'
         }).then(() => {
             setTimeout(() => {
-                location.href = "../pages/index.html";
+                location.href = "../index.html";
             }, 100);
         });
 

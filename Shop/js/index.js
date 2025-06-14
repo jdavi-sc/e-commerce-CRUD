@@ -17,7 +17,7 @@ function login(event) {
             color: '#20C20E'
         }).then(() => {
             setTimeout(() => {
-                location.href = "../pages/home.html";
+                location.href = "./html/home.html";
             }, 100);
         });
 
