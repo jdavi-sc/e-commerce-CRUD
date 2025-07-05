@@ -8,15 +8,12 @@
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
 </head>
 <body>
-    <header>
-        <ul class="listHeader">
-            <li class="liHeader"><a href="./home.html">SHOP ALL</a></li>
-            <li class="liHeader"><a href="./aboutus.html">ABOUT</a></li>
-            <li class="liHeader"><a href="./home.html"> <img class="logo" src="../img/logo.png" alt="Logo"></a></li>
-            <li class="liHeader"><a href="../index.html">LOG IN</a></li>
-            <li class="liHeader"><a href="./carrinho.html" >CART(0)</a></li>
-          </ul>
-    </header>
+    <?php
+    
+        include 'Cabecalho.php';
+
+    ?>
+    
   <main class="container-principal">
       <section class="container-produtos">
           <div class="produto" >
@@ -26,7 +23,7 @@
                       R$
                       <span class="precoDestaque">419,00</span>
                   </p>
-                  <a href="../html/infoproduto1.html" class="botaoBuy">BUY NOW</a>
+                  <a href="../php/InfoProduto1.php" class="botaoBuy">BUY NOW</a>
            </div>
   
               <div class="produto" >
@@ -36,7 +33,7 @@
                       R$
                       <span class="precoDestaque">299,00</span>
                   </p>
-                  <a href="../html/infoproduto2.html" class="botaoBuy">BUY NOW</a>
+                  <a href="../php/InfoProduto2.php" class="botaoBuy">BUY NOW</a>
               </div>
   
               <div class="produto" >
@@ -46,7 +43,7 @@
                       R$
                       <span class="precoDestaque">449,00</span>
                   </p>
-                  <a href="../html/infoproduto3.html" class="botaoBuy">BUY NOW</a>
+                  <a href="../php/InfoProduto3.php" class="botaoBuy">BUY NOW</a>
               </div>
   
               <div class="produto" >
@@ -57,7 +54,7 @@
                       R$
                       <span class="precoDestaque">299,00</span>
                   </p>
-                  <a href="../html/infoproduto4.html" class="botaoBuy">BUY NOW</a>
+                  <a href="../php/InfoProduto4.php" class="botaoBuy">BUY NOW</a>
               </div>
   
               <div class="produto" >
@@ -67,7 +64,7 @@
                       R$
                       <span class="precoDestaque">999,00</span>
                   </p>
-                  <a href="../html/infoproduto5.html" class="botaoBuy">BUY NOW</a>
+                  <a href="../php/InfoProduto5.php" class="botaoBuy">BUY NOW</a>
               </div>
   
               <div class="produto" >
@@ -77,7 +74,7 @@
                       R$
                       <span class="precoDestaque">819,00</span>
                   </p>
-                  <a href="../html/infoProduto6.html" class="botaoBuy">BUY NOW</a>
+                  <a href="../php/InfoProduto6.php" class="botaoBuy">BUY NOW</a>
               </div>
       </section>
   </main>    

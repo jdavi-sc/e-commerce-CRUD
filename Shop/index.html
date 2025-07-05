@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <title>Log in</title>
+    <link rel="stylesheet" href="../Shop/css/index.css">
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <title>Log in</title>
 </head>
 <body>
     <div class="container-principal">
@@ -13,16 +13,15 @@
             <img class="logo" src="./img/logo.png" alt="Logo">
         </div>
         <div class="formulario">
-            <form id="form-login" action="#" method="post" target="_blank" autocomplete="on" onsubmit="login(event)">
+            <form id="form-login" action="../Shop/php/Login.php" method="post" target="_blank" autocomplete="on">
                 <input type="email" placeholder="email:" id="email" name="useremail" required="true">
                 <input type="password" placeholder="senha:" id="senha" name="userpassword" minlength="5" required="true">
-                <input type="submit" value="SUBMIT" name="Enviar" onclick="login(); return false">
+                <input type="submit" value="SUBMIT" name="Enviar">
             </form>
-            <a href="./html/cadastro.html" class="btnsignup">Sing up</a>
+            <a href="../Shop/html/cadastro.html" class="btnsignup">Sing up</a><br>
+            <a href="../Shop/html/loginadmin.html" class="btnadmin">Are you the owner?</a>
         </div>
     </div>
-
-    <script src="./js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
 </body>
 </html>

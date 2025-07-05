@@ -15,15 +15,17 @@
         </div>
 
         <div class="formulario-cadastro">
-            <form action="#" id="form-cadastro" method="post" target="_blank" onsubmit="signup(event)">
+            <form action="../php/CadastrarUsuario.php" id="form-cadastro" method="post" target="_blank">
                 
-                <input type="email" placeholder="email:" id="email" required="true"/>
+                <input type="text" name="nome" placeholder="nome:" id="nome"/>
+                
+                <input type="email" name="email" placeholder="email:" id="email"/>
 
-                <input type="password" placeholder="senha:" id="senha" required="true" minlength="5">
+                <input type="password" name="senha" placeholder="senha:" id="senha" minlength="5">
                 
-                <input type="text" placeholder="cpf (xxx.xxx.xxx-xx):" id="cpf" required="true" minlength="14">
+                <input type="text" name="cpf" placeholder="cpf (xxx.xxx.xxx-xx):" id="cpf" minlength="14">
                 
-                <input type="submit" value="SUBMIT" onclick="signup();return false">
+                <input type="submit" value="SUBMIT">
                 
             </form>
 
@@ -31,7 +33,5 @@
             
      </div>
     
-    <script src="../js/cadastro.js"></script>        
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
 </body>
 </html>

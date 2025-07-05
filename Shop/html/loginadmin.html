@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/loginadmin.css">
+    <title>Log in | admin</title>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+</head>
+<body>
+    <div class="container-principal">
+        <div class="logo-container">
+            <img class="logo" src="../img/logo.png" alt="Logo">
+        </div>
+        <div class="formulario">
+            <form id="form-login" action="#" method="post" target="_blank" autocomplete="on" onsubmit="login(event)">
+                <input type="email" placeholder="email:" id="email" name="useremail" required="true">
+                <input type="password" placeholder="senha:" id="senha" name="userpassword" minlength="5" required="true">
+                <input type="submit" value="SUBMIT" name="Enviar" onclick="login(); return false">
+            </form>
+            <a href="../html/cadastro.html" class="btnsignup">Sing up</a><br>
+        </div>
+    </div>
+
+    <script src="../js/loginadmin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

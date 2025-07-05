@@ -8,15 +8,12 @@
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
 </head>
 <body>
-    <header>
-        <ul class="listHeader">
-            <li class="liHeader"><a href="./home.html">SHOP ALL</a></li>
-            <li class="liHeader"><a href="./aboutus.html">ABOUT</a></li>
-            <li class="liHeader"><a href="./home.html"> <img class="logoheader" src="../img/logo.png" alt="Logo"></a></li>
-            <li class="liHeader"><a href="../index.html">LOG IN</a></li>
-            <li class="liHeader"><a href="./carrinho.html">CART(0)</a></li>
-          </ul>
-    </header>   
+    
+    <?php
+    
+        include 'Cabecalho.php';
+    
+    ?>
 
     <div class="container">
         <div class="textoAbout">

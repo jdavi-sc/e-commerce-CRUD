@@ -34,17 +34,6 @@ body {
 
 }
 
-form h3 {
-
-    text-align: center;
-    margin-bottom: 20px;
-    color: #20C20E;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: 25px;
-
-}
-
 input[type="email"], input[type="password"]{
 
     background-color: #20C20E;
@@ -83,7 +72,7 @@ input[type="submit"]:hover {
 }
 
 .btnsignup {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', courier, serif;
     font-size: 16px;
     font-weight: bold;
     color: #20C20E;
@@ -91,6 +80,19 @@ input[type="submit"]:hover {
 }
 
 .btnsignup:hover {
+    color: #20C20E;
+    text-decoration: underline;
+}
+
+.btnadmin {
+    font-family: 'Courier New', courier, serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #20C20E;
+    text-decoration: none;
+}
+
+.btnadmin:hover {
     color: #20C20E;
     text-decoration: underline;
 }
