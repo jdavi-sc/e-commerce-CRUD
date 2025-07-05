@@ -21,7 +21,7 @@ O sistema GreenSmiley permite:
 
 [**ETEC Uirapuru**](https://etecuirapuru.com.br/)  
 Curso Técnico em Desenvolvimento de Sistemas  
-Disciplina: **Banco de dados II**  
+Disciplina: **programação web II**  
 
 ### 🛠️ Ferramentas utilizadas
 
