@@ -8,6 +8,7 @@ use App\Core\Router;
 use App\Controllers\HomeController;
 use App\Controllers\UserController;
 use App\Controllers\ProductController;
+use App\Controllers\CartController;
 
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
@@ -24,5 +25,12 @@ $router->post('/cadastro', [UserController::class, 'register']);
 $router->get('/logout', [UserController::class, 'logout']);
 $router->get('/admin/usuarios', [UserController::class, 'admin']);
 $router->post('/admin/usuarios/deletar', [UserController::class, 'delete']);
+
+$router->get('/carrinho', [CartController::class, 'index']);
+$router->post('/carrinho/adicionar', [CartController::class, 'add']);
+$router->post('/carrinho/remover', [CartController::class, 'remove']);
+$router->post('/carrinho/limpar', [CartController::class, 'clear']);
+$router->get('/carrinho/checkout', [CartController::class, 'checkout']);
+$router->post('/carrinho/finalizar', [CartController::class, 'finalize']);
 
 $router->dispatch($_SERVER['REQUEST_URI'] ?? '/', $_SERVER['REQUEST_METHOD'] ?? 'GET');
