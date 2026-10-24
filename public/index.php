@@ -7,6 +7,7 @@ require_once dirname(__DIR__) . '/vendor/autoload.php';
 use App\Core\Router;
 use App\Controllers\HomeController;
 use App\Controllers\UserController;
+use App\Controllers\ProductController;
 
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
@@ -15,6 +16,7 @@ if (session_status() === PHP_SESSION_NONE) {
 $router = new Router();
 
 $router->get('/', [HomeController::class, 'index']);
+$router->get('/produto', [ProductController::class, 'show']);
 $router->get('/login', [UserController::class, 'loginForm']);
 $router->post('/login', [UserController::class, 'login']);
 $router->get('/cadastro', [UserController::class, 'registerForm']);
