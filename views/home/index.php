@@ -13,13 +13,9 @@ if (!empty($searchQuery)) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenSmiley | Official Store</title>
-    <!-- Bootstrap 5.3.3 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <!-- Google Fonts: Share Tech Mono & Space Mono -->
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <!-- Custom Theme CSS (Corteiz Inspiration) -->
     <link href="/assets/css/greensmiley.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
 </head>
@@ -29,7 +25,6 @@ if (!empty($searchQuery)) {
 
     <div class="container-fluid px-0">
         <div class="row g-0">
-            <!-- Sidebar Desktop (Estilo Corteiz - Imagem 1) -->
             <aside class="col-lg-2 d-none d-lg-block gs-sidebar">
                 <div class="gs-sidebar-logo-box">
                     <a href="/">
@@ -65,7 +60,6 @@ if (!empty($searchQuery)) {
                 </div>
             </aside>
 
-            <!-- Catálogo de Produtos (Mobile First: 2 Colunas no Mobile, 3-4 no Desktop) -->
             <main id="catalogo" class="col-12 col-lg-10 gs-catalog-main">
                 
                 <?php if (isset($_SESSION['flash'])): ?>
@@ -126,7 +120,6 @@ if (!empty($searchQuery)) {
 
     <?php include __DIR__ . '/../layouts/Footer.php'; ?>
 
-    <!-- Bootstrap 5.3.3 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

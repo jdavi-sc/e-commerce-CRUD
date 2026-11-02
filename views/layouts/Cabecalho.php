@@ -4,20 +4,16 @@ if (session_status() === PHP_SESSION_NONE && !headers_sent()) {
 }
 $cartCount = class_exists('\App\Models\Cart') ? \App\Models\Cart::count() : 0;
 ?>
-<!-- Top Navbar -->
 <nav class="navbar sticky-top gs-navbar">
     <div class="container-fluid px-2 px-md-4">
-        <!-- Mobile: Hamburger Menu -->
         <button class="gs-hamburger d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#gsMobileMenu" aria-label="Abrir Menu">
             <i class="bi bi-list"></i>
         </button>
 
-        <!-- Logo / Marca -->
         <a class="gs-brand-wrap mx-auto mx-lg-0" href="/">
             <img src="/assets/img/logo.png" alt="GreenSmiley" class="gs-logo" onerror="this.src='/assets/img/favicon.ico'">
         </a>
 
-        <!-- Mobile: Ícone Carrinho -->
         <a href="/carrinho" class="gs-cart-icon-btn d-lg-none" aria-label="Carrinho de Compras">
             <i class="bi bi-cart3 fs-5"></i>
             <?php if ($cartCount > 0): ?>
@@ -25,7 +21,6 @@ $cartCount = class_exists('\App\Models\Cart') ? \App\Models\Cart::count() : 0;
             <?php endif; ?>
         </a>
 
-        <!-- Desktop: Links da Topbar (Search, Cart, Checkout, Auth) -->
         <div class="d-none d-lg-flex align-items-center ms-auto gap-4">
             <form action="/" method="GET" class="gs-top-search m-0">
                 <input type="text" name="q" class="gs-top-search-input" placeholder="SEARCH">
@@ -54,7 +49,6 @@ $cartCount = class_exists('\App\Models\Cart') ? \App\Models\Cart::count() : 0;
     </div>
 </nav>
 
-<!-- Mobile Offcanvas Drawer (Inspirado na imagem 3 da Corteiz) -->
 <div class="offcanvas offcanvas-start gs-offcanvas" tabindex="-1" id="gsMobileMenu" aria-labelledby="gsMobileMenuLabel">
     <div class="gs-offcanvas-header">
         <button type="button" class="gs-offcanvas-close" data-bs-dismiss="offcanvas" aria-label="Fechar Menu">
@@ -97,7 +91,6 @@ $cartCount = class_exists('\App\Models\Cart') ? \App\Models\Cart::count() : 0;
             <?php endif; ?>
         </nav>
 
-        <!-- Barra de busca no rodapé do menu mobile (imagem 3) -->
         <div class="gs-mobile-search-box">
             <form action="/" method="GET" class="gs-mobile-search-form">
                 <input type="text" name="q" class="gs-mobile-search-input" placeholder="SEARCH">

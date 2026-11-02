@@ -4,19 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout | GreenSmiley</title>
-    <!-- Bootstrap 5.3.3 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <!-- Custom Theme CSS -->
     <link href="/assets/css/greensmiley.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
 </head>
 <body>
 
-    <!-- Minimal Navbar -->
     <nav class="navbar sticky-top gs-navbar">
         <div class="container-fluid px-3 px-md-5">
             <a class="gs-brand-wrap mx-auto" href="/">
@@ -27,7 +22,6 @@
 
     <div class="container py-4 py-md-5">
 
-        <!-- Checkout Steps -->
         <div class="gs-checkout-steps">
             <div class="gs-checkout-step completed"><i class="bi bi-check-lg"></i></div>
             <div class="gs-checkout-step-line active"></div>
@@ -45,7 +39,6 @@
             
             <div class="col-12 col-lg-7">
                 
-                <!-- Endereço -->
                 <div class="gs-cart-summary-box mb-4">
                     <h2 class="gs-cart-summary-title">
                         <i class="bi bi-geo-alt me-2"></i>ENDEREÇO DE ENTREGA
@@ -95,7 +88,6 @@
                     </div>
                 </div>
 
-                <!-- Pagamento -->
                 <div class="gs-cart-summary-box">
                     <h2 class="gs-cart-summary-title">
                         <i class="bi bi-credit-card me-2"></i>FORMA DE PAGAMENTO
@@ -123,7 +115,6 @@
 
             </div>
 
-            <!-- Resumo e Confirmação -->
             <div class="col-12 col-lg-5">
                 <div class="gs-cart-summary-box">
                     <h2 class="gs-cart-summary-title">ITENS DO PEDIDO</h2>
@@ -175,7 +166,6 @@
 
     <?php include __DIR__ . '/../layouts/Footer.php'; ?>
 
-    <!-- Bootstrap 5.3.3 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

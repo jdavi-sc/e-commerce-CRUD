@@ -4,13 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= htmlspecialchars($product['nome_produto']) ?> | GreenSmiley</title>
-    <!-- Bootstrap 5.3.3 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <!-- Custom Theme CSS -->
     <link href="/assets/css/greensmiley.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
 </head>
@@ -20,7 +16,6 @@
 
     <div class="container-fluid px-0">
         <div class="row g-0">
-            <!-- Sidebar Desktop (Estilo Corteiz) -->
             <aside class="col-lg-2 d-none d-lg-block gs-sidebar">
                 <div class="gs-sidebar-logo-box">
                     <a href="/">
@@ -56,11 +51,9 @@
                 </div>
             </aside>
 
-            <!-- Detalhes do Produto (Imagens 4 e 5) -->
             <main class="col-12 col-lg-10 gs-detail-container">
                 <div class="row g-4 align-items-start">
                     
-                    <!-- Imagem Grande Central do Produto -->
                     <div class="col-12 col-md-7 col-xl-7">
                         <div class="gs-detail-img-wrap">
                             <button type="button" class="gs-detail-img-nav gs-prev" onclick="history.back()" aria-label="Voltar">
@@ -82,7 +75,6 @@
                         </div>
                     </div>
 
-                    <!-- Coluna de Informações e Compra -->
                     <div class="col-12 col-md-5 col-xl-5">
                         <div class="gs-detail-info">
                             
@@ -100,7 +92,6 @@
                                 <input type="hidden" name="nomeProduto" value="<?= htmlspecialchars($product['nome_produto']) ?>">
                                 <input type="hidden" name="precoProduto" value="<?= htmlspecialchars((string) $product['preco']) ?>">
 
-                                <!-- Seletor de Tamanhos (SIZE) -->
                                 <div class="gs-size-section">
                                     <span class="gs-section-label">SIZE</span>
 
@@ -123,7 +114,6 @@
                                     <?php endif; ?>
                                 </div>
 
-                                <!-- Seletor de Cores (COLOUR - Referência Imagem 4) -->
                                 <div class="mb-4">
                                     <span class="gs-section-label">COLOUR</span>
                                     <div class="gs-color-grid">
@@ -133,7 +123,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Botão de Ação: ADD TO CART ou SOLD OUT -->
                                 <?php if (empty($product['tamanhos'])): ?>
                                     <button type="button" class="gs-btn-action sold-out" disabled>
                                         SOLD OUT
@@ -145,9 +134,7 @@
                                 <?php endif; ?>
                             </form>
 
-                            <!-- Acordeão de Detalhes Estilo Corteiz (Imagens 4 e 5) -->
                             <div class="gs-accordion-wrap">
-                                <!-- Detalhes -->
                                 <div class="gs-accordion-item">
                                     <button type="button" class="gs-accordion-header" onclick="toggleGsAccordion(this)">
                                         <span>DETAILS</span>
@@ -164,7 +151,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Guia de Tamanhos -->
                                 <div class="gs-accordion-item">
                                     <button type="button" class="gs-accordion-header" onclick="toggleGsAccordion(this)">
                                         <span>SIZE GUIDE</span>
@@ -175,7 +161,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Política de Envio -->
                                 <div class="gs-accordion-item">
                                     <button type="button" class="gs-accordion-header" onclick="toggleGsAccordion(this)">
                                         <span>SHIPPING POLICY</span>
@@ -197,7 +182,6 @@
 
     <?php include __DIR__ . '/../layouts/Footer.php'; ?>
 
-    <!-- Bootstrap 5.3.3 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         function toggleGsAccordion(btn) {
