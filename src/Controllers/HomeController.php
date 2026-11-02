@@ -20,4 +20,9 @@ class HomeController extends Controller
             'usersCount' => $usersCount
         ]);
     }
+
+    public function about(): void
+    {
+        $this->render('home/Aboutus');
+    }
 }

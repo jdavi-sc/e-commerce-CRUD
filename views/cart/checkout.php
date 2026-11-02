@@ -4,90 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout | GreenSmiley</title>
-    <meta name="description" content="Finalize seu pedido GreenSmiley de forma rápida e segura.">
+    <!-- Bootstrap 5.3.3 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Custom Theme CSS -->
+    <link href="/assets/css/greensmiley.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
-    <style>
-        .checkout-step {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 0.85rem;
-        }
-        .checkout-step.active {
-            background-color: #198754;
-            color: #fff;
-        }
-        .checkout-step.done {
-            background-color: #198754;
-            color: #fff;
-        }
-        .checkout-step.pending {
-            background-color: #e9ecef;
-            color: #6c757d;
-        }
-    </style>
 </head>
-<body class="bg-light">
+<body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="/">
-                <img src="/assets/img/logo.png" alt="Logo" width="34" height="34" class="me-2 rounded-circle">
-                <span class="fw-bold text-success">GreenSmiley</span>
+    <!-- Minimal Navbar -->
+    <nav class="navbar sticky-top gs-navbar">
+        <div class="container-fluid px-3 px-md-5">
+            <a class="gs-brand-wrap mx-auto" href="/">
+                <img src="/assets/img/logo.png" alt="GreenSmiley" class="gs-logo">
             </a>
         </div>
     </nav>
 
-    <div class="container py-4">
+    <div class="container py-4 py-md-5">
 
-        <div class="d-flex align-items-center justify-content-center gap-2 mb-4">
-            <span class="checkout-step done"><i class="bi bi-check-lg"></i></span>
-            <div class="border-top border-success flex-grow-0" style="width: 40px;"></div>
-            <span class="checkout-step active">2</span>
-            <div class="border-top flex-grow-0" style="width: 40px;"></div>
-            <span class="checkout-step pending">3</span>
+        <!-- Checkout Steps -->
+        <div class="gs-checkout-steps">
+            <div class="gs-checkout-step completed"><i class="bi bi-check-lg"></i></div>
+            <div class="gs-checkout-step-line active"></div>
+            <div class="gs-checkout-step active">2</div>
+            <div class="gs-checkout-step-line"></div>
+            <div class="gs-checkout-step">3</div>
         </div>
 
-        <h1 class="h3 fw-bold text-dark text-center mb-4">
-            <i class="bi bi-credit-card text-success me-2"></i>Checkout
-        </h1>
+        <div class="text-center mb-4">
+            <h1 class="gs-page-title justify-content-center">CHECKOUT</h1>
+            <p class="text-muted small">INFORME OS DADOS DE ENTREGA E PAGAMENTO</p>
+        </div>
 
-        <div class="row g-4">
+        <div class="row g-4 justify-content-center">
+            
             <div class="col-12 col-lg-7">
-                <div class="card border-0 shadow-sm rounded-4 p-4 bg-white mb-4">
-                    <h2 class="h5 fw-bold text-dark mb-3">
-                        <i class="bi bi-geo-alt text-success me-2"></i>Endereço de Entrega
+                
+                <!-- Endereço -->
+                <div class="gs-cart-summary-box mb-4">
+                    <h2 class="gs-cart-summary-title">
+                        <i class="bi bi-geo-alt me-2"></i>ENDEREÇO DE ENTREGA
                     </h2>
+                    
                     <div class="row g-3">
                         <div class="col-12 col-md-8">
-                            <label for="rua" class="form-label fw-semibold">Rua</label>
-                            <input type="text" class="form-control" id="rua" placeholder="Rua, Avenida..." required>
+                            <label for="rua" class="gs-form-label">RUA / AVENIDA</label>
+                            <input type="text" class="form-control gs-input" id="rua" placeholder="RUA DAS FLORES..." required>
                         </div>
                         <div class="col-12 col-md-4">
-                            <label for="numero" class="form-label fw-semibold">Número</label>
-                            <input type="text" class="form-control" id="numero" placeholder="Nº" required>
+                            <label for="numero" class="gs-form-label">NÚMERO</label>
+                            <input type="text" class="form-control gs-input" id="numero" placeholder="123" required>
                         </div>
                         <div class="col-12 col-md-6">
-                            <label for="bairro" class="form-label fw-semibold">Bairro</label>
-                            <input type="text" class="form-control" id="bairro" placeholder="Bairro" required>
+                            <label for="bairro" class="gs-form-label">BAIRRO</label>
+                            <input type="text" class="form-control gs-input" id="bairro" placeholder="CENTRO" required>
                         </div>
                         <div class="col-12 col-md-6">
-                            <label for="cep" class="form-label fw-semibold">CEP</label>
-                            <input type="text" class="form-control" id="cep" placeholder="00000-000" maxlength="9" required>
+                            <label for="cep" class="gs-form-label">CEP</label>
+                            <input type="text" class="form-control gs-input" id="cep" placeholder="00000-000" maxlength="9" required>
                         </div>
                         <div class="col-12 col-md-8">
-                            <label for="cidade" class="form-label fw-semibold">Cidade</label>
-                            <input type="text" class="form-control" id="cidade" placeholder="Cidade" required>
+                            <label for="cidade" class="gs-form-label">CIDADE</label>
+                            <input type="text" class="form-control gs-input" id="cidade" placeholder="SÃO PAULO" required>
                         </div>
                         <div class="col-12 col-md-4">
-                            <label for="estado" class="form-label fw-semibold">Estado</label>
-                            <select class="form-select" id="estado" required>
+                            <label for="estado" class="gs-form-label">ESTADO (UF)</label>
+                            <select class="form-select gs-input" id="estado" required>
                                 <option value="">UF</option>
                                 <option value="AC">AC</option><option value="AL">AL</option>
                                 <option value="AP">AP</option><option value="AM">AM</option>
@@ -108,92 +95,87 @@
                     </div>
                 </div>
 
-                <div class="card border-0 shadow-sm rounded-4 p-4 bg-white">
-                    <h2 class="h5 fw-bold text-dark mb-3">
-                        <i class="bi bi-credit-card-2-front text-success me-2"></i>Forma de Pagamento
+                <!-- Pagamento -->
+                <div class="gs-cart-summary-box">
+                    <h2 class="gs-cart-summary-title">
+                        <i class="bi bi-credit-card me-2"></i>FORMA DE PAGAMENTO
                     </h2>
+
                     <div class="row g-3">
                         <div class="col-12">
-                            <label for="cartao" class="form-label fw-semibold">Número do Cartão</label>
-                            <input type="text" class="form-control" id="cartao" placeholder="0000 0000 0000 0000" maxlength="19" required>
+                            <label for="cartao" class="gs-form-label">NÚMERO DO CARTÃO</label>
+                            <input type="text" class="form-control gs-input" id="cartao" placeholder="0000 0000 0000 0000" maxlength="19" required>
                         </div>
                         <div class="col-12">
-                            <label for="titular" class="form-label fw-semibold">Nome no Cartão</label>
-                            <input type="text" class="form-control" id="titular" placeholder="Como impresso no cartão" required>
+                            <label for="titular" class="gs-form-label">NOME IMPRESSO NO CARTÃO</label>
+                            <input type="text" class="form-control gs-input" id="titular" placeholder="NOME COMPLETO" required>
                         </div>
                         <div class="col-6">
-                            <label for="validade" class="form-label fw-semibold">Validade</label>
-                            <input type="text" class="form-control" id="validade" placeholder="MM/AA" maxlength="5" required>
+                            <label for="validade" class="gs-form-label">VALIDADE (MM/AA)</label>
+                            <input type="text" class="form-control gs-input" id="validade" placeholder="12/28" maxlength="5" required>
                         </div>
                         <div class="col-6">
-                            <label for="cvv" class="form-label fw-semibold">CVV</label>
-                            <input type="text" class="form-control" id="cvv" placeholder="000" maxlength="4" required>
+                            <label for="cvv" class="gs-form-label">CVV</label>
+                            <input type="text" class="form-control gs-input" id="cvv" placeholder="123" maxlength="4" required>
                         </div>
                     </div>
                 </div>
+
             </div>
 
+            <!-- Resumo e Confirmação -->
             <div class="col-12 col-lg-5">
-                <div class="card border-0 shadow-sm rounded-4 bg-white p-4">
-                    <h2 class="h5 fw-bold text-dark mb-3">
-                        <i class="bi bi-receipt text-success me-2"></i>Resumo do Pedido
-                    </h2>
+                <div class="gs-cart-summary-box">
+                    <h2 class="gs-cart-summary-title">ITENS DO PEDIDO</h2>
 
-                    <div class="list-group list-group-flush mb-3">
+                    <div class="mb-3">
                         <?php foreach ($items as $item): ?>
-                            <div class="list-group-item px-0 d-flex justify-content-between align-items-center border-0">
+                            <div class="d-flex justify-content-between align-items-center py-2 border-bottom border-dark">
                                 <div>
-                                    <span class="fw-semibold text-dark"><?= htmlspecialchars($item['produto']) ?></span>
-                                    <small class="d-block text-muted">Tamanho: <?= htmlspecialchars($item['tamanho']) ?></small>
+                                    <div class="gs-cart-item-name"><?= htmlspecialchars(strtoupper($item['produto'])) ?></div>
+                                    <small class="text-muted">TAMANHO: <?= htmlspecialchars($item['tamanho']) ?></small>
                                 </div>
-                                <span class="fw-bold text-success">R$ <?= number_format((float) $item['preco'], 2, ',', '.') ?></span>
+                                <span class="fw-bold">R$ <?= number_format((float) $item['preco'], 2, ',', '.') ?></span>
                             </div>
                         <?php endforeach; ?>
                     </div>
 
-                    <hr>
-
-                    <div class="d-flex justify-content-between text-muted mb-2">
-                        <span>Subtotal</span>
+                    <div class="gs-summary-line">
+                        <span class="text-muted">SUBTOTAL</span>
                         <span>R$ <?= number_format($total, 2, ',', '.') ?></span>
                     </div>
-                    <div class="d-flex justify-content-between text-muted mb-3">
-                        <span>Frete</span>
-                        <span class="text-success fw-semibold">Grátis</span>
+
+                    <div class="gs-summary-line">
+                        <span class="text-muted">FRETE</span>
+                        <span class="text-white">GRÁTIS</span>
                     </div>
 
-                    <hr>
-
-                    <div class="d-flex justify-content-between mb-4">
-                        <span class="h5 fw-bold text-dark mb-0">Total</span>
-                        <span class="h5 fw-bold text-success mb-0">R$ <?= number_format($total, 2, ',', '.') ?></span>
+                    <div class="gs-summary-line total">
+                        <span>TOTAL A PAGAR</span>
+                        <span>R$ <?= number_format($total, 2, ',', '.') ?></span>
                     </div>
 
-                    <form action="/carrinho/finalizar" method="POST">
-                        <div class="d-grid">
-                            <button type="submit" class="btn btn-success btn-lg fw-semibold py-3">
-                                <i class="bi bi-bag-check-fill me-2"></i>Confirmar Pedido
-                            </button>
-                        </div>
+                    <form action="/carrinho/finalizar" method="POST" class="mt-4">
+                        <button type="submit" class="gs-btn gs-btn-primary w-100 py-3">
+                            <i class="bi bi-lock-fill me-2"></i>CONFIRMAR PEDIDO
+                        </button>
                     </form>
 
                     <div class="text-center mt-3">
-                        <small class="text-muted">
-                            <i class="bi bi-shield-lock-fill text-success me-1"></i>Transação protegida e criptografada
-                        </small>
-                    </div>
-
-                    <div class="text-center mt-2">
-                        <a href="/carrinho" class="text-decoration-none text-muted small">
-                            <i class="bi bi-arrow-left me-1"></i>Voltar ao carrinho
+                        <a href="/carrinho" class="text-muted small text-decoration-none">
+                            <i class="bi bi-arrow-left me-1"></i>VOLTAR AO CARRINHO
                         </a>
                     </div>
                 </div>
             </div>
+
         </div>
 
     </div>
 
+    <?php include __DIR__ . '/../layouts/Footer.php'; ?>
+
+    <!-- Bootstrap 5.3.3 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -17,6 +17,7 @@ if (session_status() === PHP_SESSION_NONE) {
 $router = new Router();
 
 $router->get('/', [HomeController::class, 'index']);
+$router->get('/sobre', [HomeController::class, 'about']);
 $router->get('/produto', [ProductController::class, 'show']);
 $router->get('/login', [UserController::class, 'loginForm']);
 $router->post('/login', [UserController::class, 'login']);
